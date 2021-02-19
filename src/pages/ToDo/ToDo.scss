@@ -1,0 +1,23 @@
+table{
+    width: 100%;
+    th{
+        background-color: #fafafa;
+        padding: 20px;
+        font-size:18px;
+    }
+    td{
+        padding:20px;
+        button{
+            width: 50%;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            border:0px;
+            padding: 10px;
+        }
+    }
+    tr:hover{
+        background-color: #e6f7ff;
+        
+    }
+}
