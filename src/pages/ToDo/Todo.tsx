@@ -30,7 +30,6 @@ const Todo = () =>{
                     <th>Priority</th>
                     <th>Description</th>
                     <th>Action</th>
-                    <th>Clear</th>
                 </tr>
                 {task.data.map((resp: any, index: number)=>(
                 (resp.Status==="Todo")?<tr key={index}>
@@ -40,7 +39,6 @@ const Todo = () =>{
                     <td>{resp.Priority}</td>
                     <td>{resp.Description}</td>
                     <td><button value={index} onClick={moveInpro}>Start Task</button></td>
-                    <td>X</td>
                 </tr>:""
             ))}
         </table>
