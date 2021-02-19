@@ -25,7 +25,6 @@ const InProgress = () =>{
                     <th>Priority</th>
                     <th>Description</th>
                     <th>Action</th>
-                    <th>Clear</th>
                 </tr>
                 {task.data.map((resp: any, index: number)=>(
                 (resp.Status==="Inprogress")?<tr key={index}>
@@ -35,7 +34,6 @@ const InProgress = () =>{
                     <td>{resp.Priority}</td>
                     <td>{resp.Description}</td>
                     <td><button value={index} onClick={moveInpro}>Completed</button></td>
-                    <td>X</td>
                 </tr>:""
             ))}
         </table>
