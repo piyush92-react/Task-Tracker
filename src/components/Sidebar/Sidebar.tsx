@@ -8,7 +8,7 @@ const Sidebar = () =>{
         <div className="logo" >Task Tracker</div>
         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
           <Menu.Item key="1">
-            <Link to="/home">
+            <Link to="/">
               Home
             </Link>
           </Menu.Item>
