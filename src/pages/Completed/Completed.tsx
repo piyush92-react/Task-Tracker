@@ -17,7 +17,6 @@ const Completed = () =>{
                     <th>Priority</th>
                     <th>Description</th>
                     <th>Action</th>
-                    <th>Clear</th>
                 </tr>
                 {task.data.map((resp: any, index: number)=>(
                 (resp.Status==="Done")?<tr key={index}>
@@ -27,7 +26,6 @@ const Completed = () =>{
                     <td>{resp.Priority}</td>
                     <td>{resp.Description}</td>
                     <td><button value={index}>Done</button></td>
-                    <td>X</td>
                 </tr>:""
             ))}
         </table>
